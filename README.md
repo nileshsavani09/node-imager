@@ -6,13 +6,19 @@
 
 A node module to resize, crop and upload images (with different variants and presets) to Rackspace cloudfiles and Amazon S3.
 
+# IMPORTANT
+
+This is a fork of the no-longer maintained repository here: https://github.com/madhums/node-imager
+
+It exists solely to fix an issue with a breaking change in a dependant library.
+
 ## Requirements
 
 You need to have [ImageMagick](http://www.imagemagick.org/) installed, otherwise you will get weird errors.
 
 ## Installation
 ```sh
-$ npm install imager
+$ npm install imager-s3
 ```
 
 ## Usage
@@ -21,7 +27,7 @@ $ npm install imager
 Checkout the example config file `imager-config-example.js` in the repo
 
 ```js
-var Imager = require('imager');
+var Imager = require('imager-s3');
     // See https://github.com/madhums/node-imager/blob/master/imager-config-example.js for example configuration
   , imagerConfig = require('path/to/imager-config.js')
   , imager = new Imager(imagerConfig, 'Rackspace') // or 'S3' for amazon
