@@ -1,4 +1,11 @@
 
+0.4.1 / 2017-02-10
+=================
+
+  * Fix rename function when using new multer module.
+  * Update dependencies
+    - knox-s3@^0.9.2
+
 0.4.0 / 2014-09-19
 =================
 
